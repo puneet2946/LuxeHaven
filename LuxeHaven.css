@@ -11,17 +11,49 @@ body {
   line-height: 1.6;
 }
 header {
-  background: linear-gradient(90deg, #000, #3d3d3d);
+  background: transparent;
   color: #d4af37;
   padding: 25px 0;
   text-align: center;
-  border-bottom: 2px solid #d4af37;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.logo-box {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    background: #d4af37;
+    color: #000;
+
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Playfair Display", serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.brand-name {
+    margin-left: 95px;
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    color: #d4af37;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 20px;
 }
 
 header h1 {
-  font-size: 2rem;
-  letter-spacing: 1px;
-  font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    font-weight: 700;
 }
 
 nav ul {
@@ -54,6 +86,77 @@ nav ul li a:hover {
   text-align: center;
   color: white;
   position: relative;
+}
+
+h1, h2, h3 {
+    font-family: "Playfair Display", serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #d4af37;
+}
+
+.hero-content h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #d4af37;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    color: #e6e6e6;
+    line-height: 1.7;
+}
+
+.listings h2,
+#gallery h2,
+footer h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #d4af37;
+    margin-bottom: 25px;
+}
+
+nav ul li a {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    transition: 0.3s;
+}
+nav ul li a:hover {
+    color: #d4af37;
+}
+
+.property-card h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+p {
+    font-size: 1.15rem;
+    color: #d6d6d6;
+    line-height: 1.75;
+}
+
+.btn,
+.login-btn,
+.login-submit {
+    font-size: 1.15rem !important;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 #listings {
@@ -129,7 +232,7 @@ nav ul li a:hover {
 }
 
 .property-card:hover {
-  transform: rotateY(10deg) rotateX(5deg) scale(1.03);
+  transform: rotateY(5deg) rotateX(5deg) scale(1.03);
   box-shadow: 0 15px 30px rgba(212, 175, 55, 0.3);
 }
 
@@ -169,6 +272,89 @@ footer {
   border-top: 2px solid #d4af37;
 }
 
+.login-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 14px;
+    border: 1px solid #d4af37;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #d4af37;
+    color: #000;
+}
+
+.login-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.login-box {
+    background: #141416;
+    padding: 30px;
+    color: white;
+    border-radius: 12px;
+    width: 320px;
+    text-align: center;
+    position: relative;
+    border: 1px solid rgba(212,175,55,0.3);
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    font-family: "Playfair Display";
+    color: #d4af37;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background: #0f0f10;
+    color: white;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background: #d4af37;
+    color: #000;
+    border: none;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    opacity: 0.9;
+}
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
 footer h2 {
   font-family: 'Playfair Display', serif;
   margin-bottom: 10px;
@@ -190,4 +376,166 @@ section {
     opacity: 1;
     transform: translateY(0);
   }
+}
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+header h1 {
+    font-size: 2.4rem;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.listings h2, #gallery h2, footer h2 {
+    font-size: 2.2rem;
+}
+
+.property-card h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+header h1, nav ul li a {
+    text-shadow: 0 0 8px rgba(0,0,0,0.7);
+}
+.login-body {
+    background: linear-gradient(180deg, #0f0f10, #1a1a1c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Poppins, sans-serif;
+}
+
+.login-container {
+    background: #141416;
+    padding: 40px 35px;
+    border-radius: 18px;
+    width: 350px;
+    text-align: center;
+    border: 1px solid rgba(212,175,55,0.3);
+    box-shadow: 0 0 40px rgba(0,0,0,0.6);
+}
+
+.login-container h2 {
+    color: #d4af37;
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    background: #0f0f10;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+}
+
+.login-submit {
+    width: 100%;
+    padding: 14px;
+    background: #d4af37;
+    border: none;
+    font-weight: bold;
+    color: #000;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-submit:hover {
+    opacity: 0.9;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+h1, h2, h3 {
+    font-family: "Playfair Display", serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.property-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.property-card div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.property-card .btn {
+    margin-top: auto;
+    display: inline-block;
+    text-align: center;
+}
+.property-card .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    background-color: #d4af37;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.property-card .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
+.search-page-form {
+    max-width: 700px;
+    margin: 25px auto 0;
+    background: #141416;
+    padding: 25px 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(212,175,55,0.3);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.search-page-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.search-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-row input,
+.search-row select {
+    flex: 1;
+    min-width: 150px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    background: #0f0f10;
+    color: #fff;
+}
+
+.search-row select {
+    cursor: pointer;
 }

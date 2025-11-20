@@ -8,17 +8,28 @@
 </head>
 <body>
     <header>
-        <h1>LuxeHaven</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#listings">Listings</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="logo-box">
+        <span>LH</span>
+    </div>
 
+    <h1>LuxeHaven</h1>
+
+    <nav>
+        <ul>
+            <li><a href="LuxeHaven.html#home">Home</a></li>
+            <li><a href="LuxeHaven.html#listings">Listings</a></li>
+            <li><a href="LuxeHaven.html#gallery">Gallery</a></li>
+
+            <li><a href="buy.html">Buy</a></li>
+            <li><a href="rent.html">Rent</a></li>
+            <li><a href="plots.html">Plots / Lands</a></li>
+            <li><a href="search.html">Search</a></li>
+</li>
+
+            <li><a href="login.html" class="login-btn">Login</a></li>
+        </ul>
+    </nav>
+</header>
     <section class="hero" id="home">
         <div class="hero-content">
             <h2>Discover Your Dream Home</h2>
@@ -29,6 +40,18 @@
 
     <section class="listings" id="listings">
         <h2>Featured Properties</h2>
+        <!-- <div class="filters">
+        <div class="filter-buttons">
+            <button class="filter-btn active">Buy</button>
+            <button class="filter-btn">Rent</button>
+            <button class="filter-btn">Plots / Lands</button>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search by city, area or project">
+            <button class="search-btn">Search</button>
+        </div>
+    </div> -->
         <div class="cards">
             <div class="property-card">
                 <img src="images/Elegant villa : exterior.jpg" alt="Elegant Villa">
@@ -98,5 +121,16 @@
         <p>Address: 123 LuxeHaven St, Gurugram, Haryana, India</p>
         <p>© 2025 LuxeHaven Real Estate. All rights reserved.</p>
     </footer>
+    <div id="loginModal" class="login-modal">
+    <div class="login-box">
+        <h2>Sign In</h2>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <span class="close-btn" onclick="closeLogin()">×</span>
+    </div>
+</div>
 </body>
 </html>

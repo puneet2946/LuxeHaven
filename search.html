@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeHaven - Property Search</title>
+    <link rel="stylesheet" href="LuxeHaven.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-box">
+            <span>LH</span>
+        </div>
+
+        <h1>LuxeHaven</h1>
+
+        <nav>
+            <ul>
+                <li><a href="LuxeHaven.html#home">Home</a></li>
+                <li><a href="LuxeHaven.html#listings">Listings</a></li>
+                <li><a href="LuxeHaven.html#gallery">Gallery</a></li>
+
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="plots.html">Plots / Lands</a></li>
+                <li><a href="search.html">Search</a></li>
+
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="listings" style="padding-top:160px;">
+        <h2>Search Properties</h2>
+        <p>Filter properties by city, budget and type to discover your ideal home.</p>
+
+        <div class="search-page-form">
+            <form onsubmit="return false;">
+                <div class="search-row">
+                    <input type="text" placeholder="City / Area (e.g., Gurugram)" required>
+                    <select>
+                        <option value="propertytype">Property Type</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="villa">Villa</option>
+                        <option value="penthouse">Penthouse</option>
+                        <option value="plot">Plot / Land</option>
+                    </select>
+                </div>
+
+                <div class="search-row">
+                    <input type="number" placeholder="Min Budget (₹)" min="0">
+                    <input type="number" placeholder="Max Budget (₹)" min="0">
+                </div>
+
+                <button class="btn" type="submit">Search Now</button>
+            </form>
+        </div>
+
+        <p style="margin-top:25px; font-size:0.95rem; opacity:0.8;">
+            *(For Phase 2 you can make this form functional using JavaScript to filter real listings.)*
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2025 LuxeHaven Real Estate. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
