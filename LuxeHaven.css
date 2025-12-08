@@ -275,7 +275,7 @@ footer {
 }
 
 .login-btn {
-    position: absolute;
+    position: absolute; 
     top: 25px;
     right: 25px;
     color: #d4af37;
@@ -409,8 +409,8 @@ nav ul li a {
 header h1, nav ul li a {
     text-shadow: 0 0 8px rgba(0,0,0,0.7);
 }
-.login-body {
-    background: linear-gradient(180deg, #0f0f10, #1a1a1c);
+.login-body { 
+    background: linear-gradient(180deg, #0f0f10, #1a1a1c); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -549,4 +549,32 @@ body {
 
 footer {
     margin-top: auto;
+}
+.home-search {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.home-search input {
+    padding: 12px;
+    flex: 1;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    margin-left: 20px;
+    color: white;
+}
+
+.home-search .btn {
+    padding: 12px 20px;
+    margin-right: 20px;
+    background-color: #d4af37;
+    color: black;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.highlight {
+    background-color: rgb(250, 246, 230);
 }

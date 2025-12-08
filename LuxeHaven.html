@@ -37,44 +37,50 @@
             <a href="#listings" class="btn">Explore Now</a>
         </div>
     </section>
+    <section>
+        <div class="home-search">
+            <input type="text" id="home-search-input" placeholder="Search by city or area...">
+            <button id="home-search-btn" class="btn">Search</button>
+        </div>
+    </section>
 
     <section class="listings" id="listings">
         <h2>Featured Properties</h2>
-        <div class="cards">
-            <div class="property-card">
+        <div class="cards" id="cards">
+            <div class="property-card" id="card1">
                 <img src="images/Elegant villa : exterior.jpg" alt="Elegant Villa">
                 <div>
                     <h3>Luxury Villa in Delhi</h3>
                     <p>5 Beds | 6 Baths | 7500 sqft</p>
                     <p>$4,500,000</p>
-                    <a href="#" class="btn">View Details</a>
+                    <a href="#" class="btn" id="btn1">View Details</a>
                 </div>
             </div>
-            <div class="property-card">
+            <div class="property-card" id="card2">
                 <img src="images/Penthouse : skyline.jpg" alt="Penthouse">
                 <div>
                     <h3>Modern Apartment in Mumbai</h3>
                     <p>3 Beds | 2 Baths | 1800 sqft</p>
                     <p>$2,200,000</p>
-                    <a href="#" class="btn">View Details</a>
+                    <a href="#" class="btn" id="btn2">View Details</a>
                 </div>
             </div>
-            <div class="property-card">
+            <div class="property-card" id="card3">
                 <img src="images/Lighted house.jpg" alt="Lighted House">
                 <div>
                     <h3>Fully Furnished House in Gurugram</h3>
                     <p>4 Beds | 4 Baths | 3200 sqft</p>
                     <p>$3,800,000</p>
-                    <a href="#" class="btn">View Details</a>
+                    <a href="#" class="btn" id="btn3">View Details</a>
                 </div>
             </div>
-            <div class="property-card">
+            <div class="property-card" id="card4">
                 <img src="images/Luxury Villa.jpg" alt="Luxury Villa">
                 <div>
                     <h3>Ludhiana Villa</h3>
                     <p>6 Beds | 6 Baths | 7500 sqft</p>
                     <p>$4,500,000</p>
-                    <a href="#" class="btn">View Details</a>
+                    <a href="#" class="btn" id="btn4">View Details</a>
                 </div>
             </div>
         </div>
@@ -103,11 +109,13 @@
 
     <footer id="contact">
         <h2>Contact Us</h2>
-        <p>Email: puneet2946@gmail.com</p>
+        <p>Email: LuxeHaven@gmail.com</p>
         <p>Phone: +91 99999 99999</p>
         <p>Address: 123 LuxeHaven St, Gurugram, Haryana, India</p>
-        <p>© 2025 LuxeHaven Real Estate. All rights reserved.</p>
+        <p>© <span id="year"></span> LuxeHaven Real Estate. All rights reserved.</p>
     </footer>
+
+<script src="LuxeHaven.js"></script>
     <div id="loginModal" class="login-modal">
     <div class="login-box">
         <h2>Sign In</h2>

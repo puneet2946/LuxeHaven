@@ -38,7 +38,7 @@
         <div class="search-page-form">
             <form onsubmit="return false;">
                 <div class="search-row">
-                    <input type="text" placeholder="City / Area (e.g., Gurugram)" required>
+                    <input type="text" id="search-input" placeholder="City / Area (e.g., Gurugram)" required>
                     <select>
                         <option value="propertytype">Property Type</option>
                         <option value="apartment">Apartment</option>
@@ -53,7 +53,8 @@
                     <input type="number" placeholder="Max Budget (₹)" min="0">
                 </div>
 
-                <button class="btn" type="submit">Search Now</button>
+                <button class="btn" id="search-btn" type="submit">Search Now</button>
+                <p id="search-result"></p>
             </form>
         </div>
     </section>
