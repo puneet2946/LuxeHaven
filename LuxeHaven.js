@@ -1,65 +1,69 @@
-const yearSpan = document.getElementById("year")
+var yearSpan = document.getElementById("year");
 if (yearSpan) {
-    yearSpan.textContent = new Date().getFullYear();
+    var currentYear = new Date().getFullYear();
+    yearSpan.textContent = currentYear;
 }
 
+var homeSearchInput = document.getElementById("home-search-input");
+var homeSearchBtn = document.getElementById("home-search-btn");
 
-const searchInput = document.getElementById("home-search-input");
-const searchBtn = document.getElementById("home-search-btn");
-if (searchBtn) {
-    searchBtn.onclick = function() {
-        alert("You searched for: " + searchInput.value);
+if (homeSearchBtn && homeSearchInput) {
+    homeSearchBtn.onclick = function () {
+        alert("You searched for: " + homeSearchInput.value);
     };
 }
 
+var searchInput = document.getElementById("search-input");
+var searchBtn = document.getElementById("search-btn");
+var searchResult = document.getElementById("search-result");
 
-const searchInput = document.getElementById("search-input");
-const searchBtn = document.getElementById("search-btn");
-const result = document.getElementById("search-result");
-if (searchBtn) {
-    searchBtn.onclick = function() {
-        result.textContent = "You searched for: " + searchInput.value;
+if (searchBtn && searchInput && searchResult) {
+    searchBtn.onclick = function () {
+        searchResult.textContent = "You searched for: " + searchInput.value;
     };
 }
 
+var loginUser = document.getElementById("login-username");
+var loginPass = document.getElementById("login-password");
+var loginBtn = document.getElementById("login-btn");
 
-const loginUser = document.getElementById("login-username");
-const loginPass = document.getElementById("login-password");
-const loginBtn = document.getElementById("login-btn");
-if (loginBtn) {
-    loginBtn.onclick = function () {
+if (loginBtn && loginUser && loginPass) {
+    loginBtn.onclick = function (event) {
+        event.preventDefault();
         alert("Username: " + loginUser.value + "\nPassword: " + loginPass.value);
     };
 }
 
-
 var btn1 = document.getElementById("btn1");
+var btn2 = document.getElementById("btn2");
+var btn3 = document.getElementById("btn3");
+var btn4 = document.getElementById("btn4");
+
 var card1 = document.getElementById("card1");
+var card2 = document.getElementById("card2");
+var card3 = document.getElementById("card3");
+var card4 = document.getElementById("card4");
 
-btn1.onclick = function () {
-    card1.classList.add("highlight");
-};
+if (btn1 && card1) {
+    btn1.onclick = function () {
+        card1.classList.add("highlight");
+    };
+}
 
+if (btn2 && card2) {
+    btn2.onclick = function () {
+        card2.classList.add("highlight");
+    };
+}
 
-var btn1 = document.getElementById("btn2");
-var card1 = document.getElementById("card2");
+if (btn3 && card3) {
+    btn3.onclick = function () {
+        card3.classList.add("highlight");
+    };
+}
 
-btn1.onclick = function () {
-    card1.classList.add("highlight");
-};
-
-
-var btn1 = document.getElementById("btn3");
-var card1 = document.getElementById("card3");
-
-btn1.onclick = function () {
-    card1.classList.add("highlight");
-};
-
-
-var btn1 = document.getElementById("btn4");
-var card1 = document.getElementById("card4");
-
-btn1.onclick = function () {
-    card1.classList.add("highlight");
-};
+if (btn4 && card4) {
+    btn4.onclick = function () {
+        card4.classList.add("highlight");
+    };
+}
