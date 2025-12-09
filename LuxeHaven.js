@@ -4,6 +4,7 @@ if (yearSpan) {
     yearSpan.textContent = currentYear;
 }
 
+
 var homeSearchInput = document.getElementById("home-search-input");
 var homeSearchBtn = document.getElementById("home-search-btn");
 
@@ -12,6 +13,7 @@ if (homeSearchBtn && homeSearchInput) {
         alert("You searched for: " + homeSearchInput.value);
     };
 }
+
 
 var searchInput = document.getElementById("search-input");
 var searchBtn = document.getElementById("search-btn");
@@ -23,6 +25,7 @@ if (searchBtn && searchInput && searchResult) {
     };
 }
 
+
 var loginUser = document.getElementById("login-username");
 var loginPass = document.getElementById("login-password");
 var loginBtn = document.getElementById("login-btn");
@@ -33,6 +36,7 @@ if (loginBtn && loginUser && loginPass) {
         alert("Username: " + loginUser.value + "\nPassword: " + loginPass.value);
     };
 }
+
 
 var btn1 = document.getElementById("btn1");
 var btn2 = document.getElementById("btn2");
