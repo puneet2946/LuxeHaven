@@ -11,7 +11,7 @@ A luxury real-estate website designed to showcase premium residences, elegant in
 <br>
 <br>
 
-A SNW Capstone Project | Newton School of Technology
+A Capstone Project | Newton School of Technology
 
 </div>
 
